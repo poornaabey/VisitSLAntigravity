@@ -44,6 +44,8 @@ export default function Home() {
             alt="Sri Lanka landscape"
             className="w-full h-full object-cover opacity-70 mix-blend-overlay"
             sizes="100vw"
+            loading="eager"
+            fetchPriority="high"
           />
         </div>
 
@@ -66,6 +68,7 @@ export default function Home() {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Where to? (e.g. Kandy, Yala Safari, Train Tickets...)"
+                aria-label="Search for destinations, packages, or experiences"
                 className="w-full text-lg md:text-xl focus:outline-none text-slate-800 placeholder-slate-400 bg-transparent"
               />
             </div>
