@@ -55,7 +55,12 @@ export default function PortalLayout() {
 
             {/* Mobile Toggle */}
             <div className="md:hidden">
-              <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className={isScrolled || !isHomePage ? 'text-slate-900' : 'text-white'}>
+              <button 
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)} 
+                className={isScrolled || !isHomePage ? 'text-slate-900' : 'text-white'}
+                aria-expanded={mobileMenuOpen}
+                aria-label="Toggle navigation menu"
+              >
                 {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
               </button>
             </div>
