@@ -1,4 +1,6 @@
 {
+  "name": "visit-sl-antigravity",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
